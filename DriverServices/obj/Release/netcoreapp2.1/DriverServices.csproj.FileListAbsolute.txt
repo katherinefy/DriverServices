@@ -1,0 +1,16 @@
+E:\公众平台\服务平台\DriverServices\DriverServices\bin\Release\netcoreapp2.1\DriverServices.deps.json
+E:\公众平台\服务平台\DriverServices\DriverServices\bin\Release\netcoreapp2.1\DriverServices.runtimeconfig.json
+E:\公众平台\服务平台\DriverServices\DriverServices\bin\Release\netcoreapp2.1\DriverServices.runtimeconfig.dev.json
+E:\公众平台\服务平台\DriverServices\DriverServices\bin\Release\netcoreapp2.1\DriverServices.dll
+E:\公众平台\服务平台\DriverServices\DriverServices\bin\Release\netcoreapp2.1\DriverServices.pdb
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\DriverServices.csprojAssemblyReference.cache
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\DriverServices.csproj.CoreCompileInputs.cache
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\DriverServices.RazorAssemblyInfo.cache
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\DriverServices.RazorAssemblyInfo.cs
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\DriverServices.AssemblyInfoInputs.cache
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\DriverServices.AssemblyInfo.cs
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\DriverServices.RazorTargetAssemblyInfo.cache
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\DriverServices.dll
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\DriverServices.pdb
+E:\公众平台\服务平台\DriverServices\DriverServices\bin\Release\netcoreapp2.1\DriverServices.xml
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\DriverServices.xml

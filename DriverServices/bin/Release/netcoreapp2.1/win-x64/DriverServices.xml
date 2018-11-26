@@ -1,0 +1,472 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DriverServices</name>
+    </assembly>
+    <members>
+        <member name="T:DriverServices.Common.Result`1">
+            <summary>
+            执行结果
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:DriverServices.Common.Result`1.#ctor">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:DriverServices.Common.Result`1.Success">
+            <summary>
+            是否成功
+            </summary>
+        </member>
+        <member name="P:DriverServices.Common.Result`1.Message">
+            <summary>
+            返回信息
+            </summary>
+        </member>
+        <member name="P:DriverServices.Common.Result`1.Data">
+            <summary>
+            返回数据
+            </summary>
+        </member>
+        <member name="P:DriverServices.Common.Result`1.Total">
+            <summary>
+            数据总条数
+            </summary>
+        </member>
+        <member name="M:DriverServices.Common.SecurityHelper.Md5(System.String)">
+            <summary>
+            Md5加密 UTF-8
+            </summary>
+            <param name="str"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DriverServices.Controllers.ExamController">
+            <summary>
+            考试相关
+            </summary>
+        </member>
+        <member name="F:DriverServices.Controllers.ExamController._repository">
+            <summary>
+            仓储类
+            </summary>
+        </member>
+        <member name="M:DriverServices.Controllers.ExamController.#ctor(DriverServices.Repository.IRepository)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:DriverServices.Controllers.ExamController.ExamQuery(System.String)">
+            <summary>
+            模拟考试抽题
+            </summary>
+            <param name="type">1客运2普货3危货</param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Controllers.ExamController.SubmitExam(System.String,System.String,System.Decimal)">
+            <summary>
+            提交试卷
+            </summary>
+            <param name="userId"></param>
+            <param name="type"></param>
+            <param name="score"></param>
+            <returns></returns>
+        </member>
+        <member name="P:DriverServices.Controllers.ParamPagination.PageSize">
+            <summary>
+            每页显示的数据条数
+            </summary>
+        </member>
+        <member name="P:DriverServices.Controllers.ParamPagination.PageIndex">
+            <summary>
+            页索引
+            </summary>
+        </member>
+        <member name="M:DriverServices.Controllers.TestController.GetString">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:DriverServices.Controllers.UserController._repository">
+            <summary>
+            仓储类
+            </summary>
+        </member>
+        <member name="M:DriverServices.Controllers.UserController.#ctor(DriverServices.Repository.IRepository)">
+            <summary>
+            构造函数
+            </summary>
+            <param name="repository"></param>
+        </member>
+        <member name="M:DriverServices.Controllers.UserController.UserLogin(DriverServices.Models.UserInfo)">
+            <summary>
+            微信用户绑定
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Controllers.UserController.UserInfoQueryByWxId(System.String)">
+            <summary>
+            根据微信openid查询用户信息
+            </summary>
+            <param name="openId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Controllers.UserController.UserUnBind(System.String)">
+            <summary>
+            微信解绑
+            </summary>
+            <param name="openId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Controllers.UserController.UserCollectExamQuery(System.String,System.String)">
+            <summary>
+            我的收藏
+            </summary>
+            <param name="userId">用户Id</param>
+            <param name="type">考试类型1客运2普货3危货</param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Controllers.UserController.UserErrorExamQuery(System.String,System.String)">
+            <summary>
+            我的错题
+            </summary>
+            <param name="userId">用户Id</param>
+            <param name="type">考试类型1客运2普货3危货</param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Controllers.UserController.UserScoreQuery(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            历次考试成绩查询
+            </summary>
+            <param name="userId">用户Id</param>
+            <param name="type">考试类型1客运2普货3危货</param>
+            <param name="pageIndex">页索引</param>
+            <param name="pageSize">每页显示的记录条数</param>
+            <returns></returns>
+        </member>
+        <member name="T:DriverServices.Controllers.UserScore">
+            <summary>
+            用户考试成绩
+            </summary>
+        </member>
+        <member name="P:DriverServices.Controllers.UserScore.Id">
+            <summary>
+            唯一标识
+            </summary>
+        </member>
+        <member name="P:DriverServices.Controllers.UserScore.UserId">
+            <summary>
+            用户Id
+            </summary>
+        </member>
+        <member name="P:DriverServices.Controllers.UserScore.ExamType">
+            <summary>
+            考试类型 1客运2普货3危货
+            </summary>
+        </member>
+        <member name="P:DriverServices.Controllers.UserScore.Score">
+            <summary>
+            考试成绩
+            </summary>
+        </member>
+        <member name="P:DriverServices.Controllers.UserScore.ExamTime">
+            <summary>
+            考试时间
+            </summary>
+        </member>
+        <member name="T:DriverServices.Models.Exam">
+            <summary>
+            考题
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.Exam.Id">
+            <summary>
+            唯一标识
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.Exam.Directory">
+            <summary>
+            目录
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.Exam.Title">
+            <summary>
+            题干
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.Exam.Type">
+            <summary>
+            类型1单选2多选3判断
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.Exam.OptionA">
+            <summary>
+            选项A
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.Exam.OptionB">
+            <summary>
+            选项B
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.Exam.OptionC">
+            <summary>
+            选项C
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.Exam.OptionD">
+            <summary>
+            选项D
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.Exam.Score">
+            <summary>
+            分值
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.Exam.Scbz">
+            <summary>
+            删除标识0有效1无效
+            </summary>
+        </member>
+        <member name="T:DriverServices.Models.UserInfo">
+            <summary>
+            用户信息
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.UserInfo.Id">
+            <summary>
+            唯一标识
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.UserInfo.Name">
+            <summary>
+            姓名
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.UserInfo.ContactNo">
+            <summary>
+            联系电话
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.UserInfo.WeiId">
+            <summary>
+            微信openid
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.UserInfo.WeiName">
+            <summary>
+            微信昵称
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.UserInfo.Password">
+            <summary>
+            登录密码
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.UserInfo.Scbz">
+            <summary>
+            是否有效 0有效1无效
+            </summary>
+        </member>
+        <member name="P:DriverServices.Models.UserInfo.RegistTime">
+            <summary>
+            注册时间
+            </summary>
+        </member>
+        <member name="T:DriverServices.Repository.IRepository">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:DriverServices.Repository.IRepository.UserInfoQuery(System.String,System.String)">
+            <summary>
+            手机号密码登录网站
+            </summary>
+            <param name="contactNo"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.IRepository.UserBind(DriverServices.Models.UserInfo)">
+            <summary>
+            用户微信绑定
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.IRepository.UserUnBind(System.String)">
+            <summary>
+            用户微信解绑
+            </summary>
+            <param name="openId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.IRepository.UserInfoQueryByWeixinId(System.String)">
+            <summary>
+            根据微信openid获取用户信息
+            </summary>
+            <param name="openId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.IRepository.UserCollectExamQuery(System.String,System.String)">
+            <summary>
+            用户收藏考题
+            </summary>
+            <param name="userId"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.IRepository.UserErrorExamQuery(System.String,System.String)">
+            <summary>
+            用户错题
+            </summary>
+            <param name="userId"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.IRepository.UserScoreQuery(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            用户历史考试成绩
+            </summary>
+            <param name="userId"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.IRepository.CollectExam(System.String,System.String,System.String)">
+            <summary>
+            考题收藏
+            </summary>
+            <param name="UserId"></param>
+            <param name="ExamId"></param>
+            <param name="ExamType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.IRepository.SaveErrorExam(System.String,System.String,System.String)">
+            <summary>
+            错题记录
+            </summary>
+            <param name="UserId"></param>
+            <param name="ExamId"></param>
+            <param name="ExamType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.IRepository.ExamQuery(System.String)">
+            <summary>
+            考试抽题
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.IRepository.SubmitExam(System.String,System.String,System.Decimal)">
+            <summary>
+            交卷
+            </summary>
+            <param name="userId"></param>
+            <param name="type"></param>
+            <param name="score"></param>
+            <returns></returns>
+        </member>
+        <member name="T:DriverServices.Repository.SqlRepository">
+            <summary>
+            数据库操作
+            </summary>
+        </member>
+        <member name="M:DriverServices.Repository.SqlRepository.#ctor(System.String)">
+            <summary>
+            构造
+            </summary>
+            <param name="connection">连接字串</param>
+        </member>
+        <member name="M:DriverServices.Repository.SqlRepository.UserInfoQuery(System.String,System.String)">
+            <summary>
+            手机号密码登录
+            </summary>
+            <param name="contactNo"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.SqlRepository.UserBind(DriverServices.Models.UserInfo)">
+            <summary>
+            微信绑定
+            </summary>
+            <param name="user"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.SqlRepository.UserUnBind(System.String)">
+            <summary>
+            微信解绑
+            </summary>      
+            <param name="openId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.SqlRepository.UserInfoQueryByWeixinId(System.String)">
+            <summary>
+            根据微信openid获取用户信息
+            </summary>
+            <param name="openId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.SqlRepository.UserCollectExamQuery(System.String,System.String)">
+            <summary>
+            用户收藏考试查询
+            </summary>
+            <param name="userId"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.SqlRepository.UserErrorExamQuery(System.String,System.String)">
+            <summary>
+            用户错题查询
+            </summary>
+            <param name="userId"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.SqlRepository.UserScoreQuery(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            历史考试成绩
+            </summary>
+            <param name="userId"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.SqlRepository.CollectExam(System.String,System.String,System.String)">
+            <summary>
+            收藏题目
+            </summary>
+            <param name="UserId"></param>
+            <param name="ExamId"></param>
+            <param name="ExamType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.SqlRepository.SaveErrorExam(System.String,System.String,System.String)">
+            <summary>
+            错题记录
+            </summary>
+            <param name="UserId"></param>
+            <param name="ExamId"></param>
+            <param name="ExamType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.SqlRepository.ExamQuery(System.String)">
+            <summary>
+            考试抽题
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:DriverServices.Repository.SqlRepository.SubmitExam(System.String,System.String,System.Decimal)">
+            <summary>
+            交卷
+            </summary>
+            <param name="userId"></param>
+            <param name="type"></param>
+            <param name="score"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

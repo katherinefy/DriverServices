@@ -1,0 +1,58 @@
+﻿body {
+}
+
+ul, li {
+    float: left;
+    list-style: none;
+}
+
+.optionStyle {
+    line-height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.page_bottom {
+    bottom: 5px;
+    width: 100%;
+    position: absolute;
+}
+
+    .page_bottom ul {
+        width: 100%;
+        float: left;
+    }
+
+.selectItem {
+    background:url(../../Images/more.png) no-repeat;
+    float:right; 
+    padding-left:24px;
+    padding-right:5px;
+}
+
+.selectExam {
+    z-index:2;
+    top:20px; 
+    bottom:0;
+    width:95%;
+    margin:0 auto;
+    background-color:#808080; 
+    /*border:1px solid #808080;*/
+}
+
+    .selectExam li {
+        width: 18%;
+        text-align: center;
+        border: 1px solid #e9e4e4;
+    }
+
+.ExamNum {
+    height:100%;
+    overflow-y:auto;
+}
+.numberstyle {
+    width: 95%;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 20px;
+}

@@ -1,0 +1,17 @@
+E:\公众平台\服务平台\DriverServices\DriverServices\bin\Release\netcoreapp2.1\win-x86\hostpolicy.dll
+E:\公众平台\服务平台\DriverServices\DriverServices\bin\Release\netcoreapp2.1\win-x86\hostfxr.dll
+E:\公众平台\服务平台\DriverServices\DriverServices\bin\Release\netcoreapp2.1\win-x86\DriverServices.exe
+E:\公众平台\服务平台\DriverServices\DriverServices\bin\Release\netcoreapp2.1\win-x86\DriverServices.deps.json
+E:\公众平台\服务平台\DriverServices\DriverServices\bin\Release\netcoreapp2.1\win-x86\DriverServices.runtimeconfig.json
+E:\公众平台\服务平台\DriverServices\DriverServices\bin\Release\netcoreapp2.1\win-x86\DriverServices.runtimeconfig.dev.json
+E:\公众平台\服务平台\DriverServices\DriverServices\bin\Release\netcoreapp2.1\win-x86\DriverServices.dll
+E:\公众平台\服务平台\DriverServices\DriverServices\bin\Release\netcoreapp2.1\win-x86\DriverServices.pdb
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\win-x86\DriverServices.csprojAssemblyReference.cache
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\win-x86\DriverServices.csproj.CoreCompileInputs.cache
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\win-x86\DriverServices.RazorAssemblyInfo.cache
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\win-x86\DriverServices.RazorAssemblyInfo.cs
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\win-x86\DriverServices.AssemblyInfoInputs.cache
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\win-x86\DriverServices.AssemblyInfo.cs
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\win-x86\DriverServices.RazorTargetAssemblyInfo.cache
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\win-x86\DriverServices.dll
+E:\公众平台\服务平台\DriverServices\DriverServices\obj\Release\netcoreapp2.1\win-x86\DriverServices.pdb

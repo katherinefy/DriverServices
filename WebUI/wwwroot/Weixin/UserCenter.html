@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,viewport-fit=cover" />
+    <title>个人中心</title>
+    <link href="../CSS/weui.min.css" rel="stylesheet" />
+    <script src="../JS/jquery-1.9.1.js"></script>
+    <script src="JS/UserCenter.js"></script>
+</head>
+<body>
+    <!--<div class="weui-cells__title">测试员，您好</div>-->
+    <div class="weui-cell">
+        <div class="weui-cell__hd" style="position: relative;margin-right: 10px;">
+            <img id="wzp" src="../Images/u228.png" style="width: 50px;display: block" />
+        </div>
+        <div class="weui-cell__bd">
+            <p>测试员</p>
+            <p style="font-size: 13px;color: #888888;">普通会员</p>
+        </div>
+    </div>
+    <div class="weui-cell weui-cell_select weui-cell_select-after">
+        <div class="weui-cell__hd">
+            <label for="" class="weui-label">考试类别</label>
+        </div>
+        <div class="weui-cell__bd">
+            <select class="weui-select" id="selType">
+                <option value="">请选择</option>
+                <option value="1">道路旅客运输驾驶员</option>
+                <option value="2">道路货物运输驾驶员</option>
+                <option value="3">道路危险货物运输驾驶员</option>
+            </select>
+        </div>
+    </div> 
+    <div class="weui-grids">
+        <div class="weui-grids" style="text-align:center">
+            <a class="weui-grid dataOption" data-field="1">顺序练习</a>
+            <a class="weui-grid dataOption" data-field="2">随机练习</a>
+            <a class="weui-grid dataOption" data-field="3">模拟考试</a>
+        </div>
+    </div>
+    <div class="weui-btn-area">
+        <a class="weui-btn weui-btn_primary" href="javascript:" id="showTooltips">我要充值</a>
+    </div>
+</body>
+</html>

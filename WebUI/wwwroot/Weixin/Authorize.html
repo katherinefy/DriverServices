@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="../JS/jquery-1.9.1.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $.ajax({
+                //url: "http://cy.dlysfw.com/CYStudy/Index.html";
+                url: "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=wxf450aee5dc2a3c41&secret=5c0b8d09134f7cc80070eae5c35bd859",
+                type: "get",
+                datatype: "json",
+                success: function (data) { 
+                    alert(data);
+                },
+                error: function (d) {
+                    alert(JSON.stringify(d));
+                }
+            });
+        });
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
